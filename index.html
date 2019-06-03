@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai" rel="stylesheet">
+    <title>TRIVIA</title>
+  </head>
+
+  <body>
+    <center>
+      <h1>¿Cuánto sabes del Perú?</h1>
+
+      <!-- Pedir nombre -->
+      <div id="formulario" class="styleFormulario">
+        <label id="nombre" for="name">Ingresa tu nombre</label><br>
+        <input type="text" id="name" name="name"><br>
+        <button type="button" id="start" class="styleStart">START</button>
+      </div>
+
+      <!-- Saludar -->
+      <p id="saludo" class="styleSaludo"></p>
+
+      <form id="temas">
+        <button type="button" id="tema1" class="styleTemas color1 hide">GEOGRAFIA</button>
+        <button type="button" id="tema2" class="styleTemas color2 hide">HISTORIA</button>
+      </form>
+
+      <!-- Primera pregunta del tema 1 -->
+      <div id="first" class="first hide">
+        <h2>Pregunta 1</h2>
+        <h2>¿Qué volcán se encuentra en Arequipa?</h2>
+
+        <form id = "question1">
+          <input type="radio" name="question1" value="misti"> Misti<br>
+          <input type="radio" name="question1" value="tutupaca"> Tutupaca<br>
+          <input type="radio" name="question1" value="coropuna"> Coropuna<br>
+          <input type="radio" name="question1" value="ubinas"> Ubinas<br>
+          <input type="radio" name="question1" value="sabancaya"> Sabancaya<br>
+        <!--   <input type="button" value="siguiente" onclick= 'punto1()'>-->
+          <button type="button" id = "punto1" class="icon-arrow-right"></button>
+        </form>
+      </div>
+
+      <!-- Segunda pregunta del tema 1 -->
+      <div id="second" class="first hide">
+        <h2>Pregunta 2</h2>
+        <h2>¿Qué nevado es el más alto del Perú?</h2>
+        <form id = "question2">
+          <input type="radio" name="question2" value="huascaran"> Huascarán<br>
+          <input type="radio" name="question2" value="alpamayo"> Alpamayo<br>
+          <input type="radio" name="question2" value="yerupaja"> Yerupaja<br>
+          <input type="radio" name="question2" value="coropuna"> Coropuna<br>
+          <input type="radio" name="question2" value="ninguno"> Ninguno<br>
+        <!--  <input type="button" value="Siguiente" onclick= 'punto2()'>-->
+          <button type="button" id = "punto2" class="icon-arrow-right"></button>
+        </form>
+      </div>
+
+      <!-- Tercera pregunta del tema 1 -->
+      <div id="third" class="first hide">
+        <h2>Pregunta 3</h2>
+        <h2>¿Dónde se encuentra Macchu Picchu?</h2>
+        <form id = "question3">
+          <input type="radio" name="question3" value="arequipa"> Arequipa<br>
+          <input type="radio" name="question3" value="lima"> Lima<br>
+          <input type="radio" name="question3" value="cusco"> Cusco<br>
+          <input type="radio" name="question3" value="puno"> Puno<br>
+          <input type="radio" name="question3" value="loreto"> Loreto<br>
+        <!--  <input type="button" value="Siguiente" onclick= 'punto3()'> -->
+          <button type="button" id = "punto3" class="icon-arrow-right"></button>
+        </form>
+      </div>
+
+      <div id="resultado1" class="styleResultado hide">
+        <p>Correctas</p>
+      </div>
+
+      <!-- Tema 2 -->
+      <!-- Primera pregunta del tema 2-->
+      <div id="primera" class="second">
+        <h2>Pregunta 1</h2>
+        <h2>¿En qué año se proclamó la independencia del Perú?</h2>
+        <form id="pregunta1">
+          <input type="radio" name="pregunta1" value="1900"> 1900<br>
+          <input type="radio" name="pregunta1" value="1924"> 1924<br>
+          <input type="radio" name="pregunta1" value="1824"> 1824<br>
+          <input type="radio" name="pregunta1" value="1921"> 1921<br>
+          <input type="radio" name="pregunta1" value="1821"> 1821<br>
+          <!--<input type="button" value="Siguiente" onclick= 'point1()'> -->
+          <button type="button" id="point1" class="icon-arrow-right"></button>
+        </form>
+      </div>
+
+      <!-- Segunda pregunta del tema 2-->
+      <div id="segunda" class="second">
+        <h2>Pregunta 2</h2>
+        <h2>¿Quién fue el primer presidente del Perú?</h2>
+        <form id="pregunta2">
+          <input type="radio" name="pregunta2" value="riva"> Jose de la Riva Aguero <br>
+          <input type="radio" name="pregunta2" value="martin"> Jose de San Martin <br>
+          <input type="radio" name="pregunta2" value="tagle"> Jose Bernardo de Tagle <br>
+          <input type="radio" name="pregunta2" value="sanchez"> Jose Sanchez Carrion<br>
+          <input type="radio" name="pregunta2" value="grau"> Miguel grau<br>
+          <!--<input type="button" value="Siguiente" onclick= 'point2()'>-->
+          <button type="button" id="point2" class="icon-arrow-right"></button>
+        </form>
+      </div>
+
+      <!-- Tercera pregunta del tema 2-->
+      <div id="tercera" class="second">
+        <h2>Pregunta 3</h2>
+        <h2>¿Quién cantó por primera vez el Himno Nacional del Perú?</h2>
+        <form id="pregunta3">
+          <input type="radio" name="pregunta3" value="jose"> Jose Bernardo Alcedo<br>
+          <input type="radio" name="pregunta3" value="torre"> Marquez de la Torre Tagle<br>
+          <input type="radio" name="pregunta3" value="shakira"> Shakira<br>
+          <input type="radio" name="pregunta3" value="rosa"> Rosa Merino <br>
+          <input type="radio" name="pregunta3" value="beyonce"> Beyonce<br>
+          <!-- <input type="button" value="Siguiente" onclick= 'point3()'> -->
+          <button type="button" id="point3" class="icon-arrow-right"></button>
+        </form>
+      </div>
+
+      <!--<input type="button" id = "resultado2" value="total" onclick= 'total2()'>-->
+      <div id="resultado2" class="styleResultado hide">
+        <p>Correctas</p>
+      </div>
+
+      <div id="volver" class="hide">
+        <h3>VOLVER A JUGAR</h3>
+        <button type="button" class="icon-loop2" id="otraVez" class="otraVez"></button>
+      </div>
+
+    </center>
+    <script type="text/javascript" src="app.js"></script>
+
+  </body>
+</html>
